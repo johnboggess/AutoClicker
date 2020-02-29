@@ -1,0 +1,3 @@
+@top
+holdkey;0x44;1
+goto;@top

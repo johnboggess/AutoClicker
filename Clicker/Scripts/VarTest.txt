@@ -1,0 +1,10 @@
+goto;@print
+var;%asdf;0
+var;%blah;11
+editvar;%asdf;=;10
+if;%asdf$;<=;%blah$
+console;%asdf$
+var;%waittime;1000
+wait;%waittime$
+@print
+console;%currentline$

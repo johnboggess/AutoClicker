@@ -1,0 +1,6 @@
+randomtime;0;0
+var;%x;0
+var;%y;0
+console;%x$
+findcolor;4542941;%x;%y;368;1037;403;1053
+move;%x$;%y$

@@ -1,0 +1,115 @@
+﻿getpos;window_name
+//Get the position of the mouse on the screen, or relative to window_name
+
+getcolor
+//Get the color of the screen at the mouse position
+
+run;script_name.txt
+//Runs script_name.txt
+
+window;window_name
+//Sets the currently selected window to window_name
+
+beep
+//Makes the program beep everytime is clicks
+
+move;x;y
+//Instantly moves the mouse to the position x,y
+
+moverelative;x;y
+//Instantly moves the mouse to position x,y relative to where the mouse currently is
+
+movewindow;x;y
+//Instantly moves the mouse to position x,y relative to the selected window
+
+movenatural;x;y
+//Moves the mouse to position x,y 
+
+movewindownatural;x;y
+//Moves the mouse to position x,y relative to the selected window
+
+leftdown
+//Hold the left mouse button down
+
+leftup
+//Releases the left mouse button
+
+leftclick
+//Does a left click
+
+doubleleftclick
+//Does a double left click
+
+rightdown
+//Hold the right mouse button down
+
+rightup
+//Releases the right mouse button
+
+rightclick
+//Does a right click
+
+doublerightclick
+//Does a double right click
+
+middledown
+//Hold the middle mouse button down
+
+middleup
+//Releases the middle mouse button
+
+middleclick
+//Does a middle click
+
+doublemiddleclick
+//Does a double middle click
+
+holdkey;key;ms
+//hold virtual key key for ms miliseconds
+//Look at KV.doc for the list key codes. YOU MUST ADD 0x INFRONT OF THE CODE
+
+randomtime;min;max
+//Sets a random delay between min and max in miliseconds for each action
+//Default min = 100ms, max = 200ms
+
+randomdistance;integer
+//When moving the mouse, the mouse will move to a random position near the target x,y less or equal to than integer pixels
+
+type;string
+//Have the program type out string
+
+goto
+//Jump to line number, the first line is line 0
+
+var;name;value
+//Creates a variable with name name and value value
+//ALL VARIABLES MUST BEGEN WITH %
+
+console;string/var
+//Writes the string/variable to the console
+
+editvar;name;operator;value
+//does operator on name with value
+//operators: =,+,-
+//e.g. editvar;test;+;1 adds one to editvar
+
+if;integer/var;operator;integer2/var
+//checks if integer/var is operator than integer2/var2. If true the script program continues to the next line, if false the program skips the next line.
+//operators: ==,!=,<,>,<=,>=
+//e.g. if;test;<=;1
+
+findcolor;color;varx;vary;left;top;right;bottom
+//Checks for color color in the rectangle defined by left,top,right,bottom.
+//Fills the variables varx and vary with the position where the color was found, or 999999999 if it wasnt found
+
+addressgetvalue;var;address
+//Gets the value from the specified memory address of the window defined by thw window command and stores it in var as a int.
+
+resolution;x;y
+//Put your screens resolution in for x and y
+
+#
+//Any line starting with # is ignored
+
+wait;ms
+//pauses the program for ms miliseconds

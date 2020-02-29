@@ -1,0 +1,5 @@
+window;OSBuddy
+var;%test;0
+addressgetvalue;%test;0x1D742448
+console;%test$
+goto;2

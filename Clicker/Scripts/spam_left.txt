@@ -1,0 +1,4 @@
+randomtime;1;2
+@top
+leftclick
+goto;@top

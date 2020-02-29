@@ -1,0 +1,4 @@
+wait;10000
+@top
+movewindow;0;0
+goto;@top
